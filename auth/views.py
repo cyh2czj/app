@@ -41,7 +41,7 @@ def register():
 
 @auth.before_app_request
 def before_request():
-    print(current_user)
+    print(current_user, 'hhh')
     if current_user.is_authenticated:
         print('yes')
         current_user.ping()
